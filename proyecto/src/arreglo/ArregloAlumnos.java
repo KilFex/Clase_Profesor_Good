@@ -17,7 +17,14 @@ public class ArregloAlumnos {
 		 alu.add(new Alumno(123, "Kalifa", 20, 20));
 	 }
 	 
-	 //Metodos personalizados
+	 /*public void ArregloAlumnos(int codigo, String Nombre, ) {
+		
+		
+	}*/
+	  /*public void agregarAlumno(Alumno a) {
+		  alu.add(a);
+	  }*/
+	//Metodos personalizados
 	 public int tamaño() {
 		 return alu.size();
 	 }
@@ -32,4 +39,67 @@ public class ArregloAlumnos {
 		 }
 		 return suma/tamaño();
 	 }
+
+	 public Alumno buscar(int cod)	 {
+		 for(int i = 0; i<tamaño(); i++)
+			 if(obtener(i).getCodigo() == cod)
+				 return obtener(i);
+						 return null;
+	 }
+	 
+	 public void eliminar(Alumno a) {
+		 alu.remove(a);
+	 }
+	 public void elimarTodo() {
+		 alu.clear();
+	 }
+	 
+	 /*public notaAlumno(Alumno x, int nota) {
+		 
+	 }*/
+	  public void adicionar(Alumno a) {
+		  alu.add(a);
+	  }
+	 
+	  
+	  public void eliminaUltimo() {
+		  alu.remove(tamaño()-1);
+	  }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 }
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
